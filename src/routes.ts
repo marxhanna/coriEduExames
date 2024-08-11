@@ -5,13 +5,21 @@ import UsersAuthMiddleware from "./middlewares/users";
 import LombalgiaController from "./controller/lombalgiaController";
 import DoresAbdominaisController from "./controller/doresAbdominaisController";
 import IvasController from "./controller/ivasController";
+import usersController from "./controller/usersController";
 
 const routes = Router();
 
+const usersController = new UsersController();
 const cefaleiaController = new CefaleiaController();
 const lombalgiaController = new LombalgiaController();
 const doresAbdominaisController = new DoresAbdominaisController();
 const ivasController = new IvasController();
+
+const usersMiddleware = new UsersAuthMiddleware();
+
+routes.get("/users", usersController.index);
+routes.post("/users", usersController.store);
+routes.post("/users/login", usersController.login);
 
 routes.get("/cefaleia", usersMiddleware.index, cefaleiaController.sinais);
 routes.post(
