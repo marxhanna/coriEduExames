@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+body {
+  background-color: #f2f2fe !important;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.user-info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 7% 0 0 7%;
+  margin-bottom: 5%;
+}
+
+.user-pic {
+  height: 50px;
+  border: solid 2px #504dff;
+  border-radius: 50px;
+  margin-right: 3%;
+}
+
+.user-name a {
+  color: #3713d6;
+}
+
+.exam-label {
+  background-color: #6b4cf2;
+  border-radius: 150px;
+  color: white;
+  font-weight: 200;
+  font-size: 12px;
+  padding: 2px 5px 2px 5px;
+  float: left;
+}
+
+.antibiotico-label {
+  background-color: #9acb3f;
+  border-radius: 150px;
+  color: white;
+  font-weight: 200;
+  font-size: 12px;
+  padding: 2px 5px 2px 5px;
+  float: left;
+}
+
+.cefaleia-btn {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  min-width: 100%;
+  min-height: 125px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: #f9feff;
+  border-radius: 20px;
+  font-size: 17px;
+  padding: 20px;
+}
+
+.dorToracica-btn {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  width: 100%;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: #f9feff;
+  border-radius: 20px;
+  font-size: 17px;
+  padding: 20px;
+}
+
+.dorAbdominal-btn {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  width: 100%;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: #f9feff;
+  border-radius: 20px;
+  font-size: 17px;
+  padding: 20px;
+}
+
+.dorAbdominal-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 25px;
+  flex-direction: row-reverse;
+}
+
+.dorAbdominal-content img {
+  height: 124px !important;
+  width: 124px !important;
+}
+
+.lombalgia-btn {
+  width: 100%;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: #f9feff;
+  border-radius: 20px;
+  font-size: 17px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.febre-btn {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  width: 100%;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: #f9feff;
+  border-radius: 20px;
+  font-size: 17px;
+  padding: 20px;
+}
+
+.ivas-btn {
+  width: 100%;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 17px;
+  padding: 20px;
+}
+
+.ivas-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 25px;
+  flex-direction: row-reverse;
+}
+
+.ivas-content img {
+  height: 124px !important;
+  width: 124px !important;
+}
+
+.exam-buttons img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 5%;
+}
+
+.navbar {
+  margin-top: 50%;
+  width: 100vw;
+  height: 75px;
+  background-color: white;
+  bottom: 0;
+  position: fixed;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-icons {
+  padding-top: 7%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-icons img {
+  height: 25px;
+  width: 25px;
+}
+
+.feedback {
+  background-color: #482bca;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10%;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 380px) and (max-height: 700px) {
+  .search-bar {
+    margin: 2% 0 0 15%;
+  }
+}
+@media only screen and (min-width: 410px) and (min-height: 900px) {
+  .search-bar {
+    margin: 12% 0 0 13%;
+  }
+}

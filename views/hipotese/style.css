@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  background-color: #f2f2fe !important;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.card {
+  position: relative;
+  cursor: pointer;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s, font-weight 0.3s;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px; /* Defina uma altura adequada para seus cards */
+  width: 200px; /* Defina uma largura adequada para seus cards */
+}
+
+.card:hover {
+  background-color: #f0f0f0;
+}
+
+.card input[type="checkbox"] {
+  display: none; /* Oculta completamente a bolinha do checkbox */
+}
+
+.card label {
+  width: 100%; /* Faz o label ocupar toda a largura do card */
+  height: 100%; /* Faz o label ocupar toda a altura do card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.popup-btn {
+  position: absolute;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+  background-color: #ff0f68;
+  font-size: 8px;
+  color: white;
+  border: none;
+  width: 46px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.green-btn {
+  background-color: #a6dc00;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.purple-btn {
+  background-color: #7f00ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-weight: bold;
+  display: block;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header {
+  background-image: url("/imgs/bg-header.png");
+  width: 100vw;
+  height: 10vh;
+  font-size: 16px;
+  color: white;
+}
+
+.user-info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5% 0 0 5%;
+}
+
+.user-pic {
+  height: 50px;
+  border: solid 2px #504dff;
+  border-radius: 50px;
+  margin-right: 3%;
+}
+
+.trauma-selecionado {
+  margin: 5%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trauma-selecionado img {
+  background-color: #f0f0f0;
+  width: 60px;
+  height: 60px;
+}
+
+.trauma-selecionado span {
+  background-color: #f0f0f0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.container {
+  width: 90%;
+  margin: 10% 0 0 5%;
+}
+
+#input-green {
+  opacity: 0;
+  position: absolute;
+}
+
+#input-green + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+#input-green + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid rgb(187, 179, 179);
+  background: #fff;
+}
+
+#input-green:checked + label:before {
+  background: #9acb3f;
+  border-color: #9acb3f;
+}
+#input-green:checked + label:after {
+  display: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+.ui.two.cards > .card {
+  padding: 4% !important;
+  border-radius: 15px;
+}
+
+.checkbox-content {
+  display: flex;
+  justify-content: left;
+}
+
+.checkbox-content label {
+  margin-left: 5%;
+}
+
+.btn-previous {
+  display: flex;
+  justify-content: center;
+  background: none;
+  border: 1px solid #504dff;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  margin: 5% 0 5% 42%;
+}
+
+.btn-previous button {
+  margin-top: 6%;
+  background-color: #504dff;
+  border: none;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+}
+
+.btn-next {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo dentro do botão */
+  align-items: center;
+  background: none;
+  border-radius: 15px;
+  height: 48px;
+  width: 100%;
+  margin: 0 auto; /* Centraliza o botão horizontalmente */
+  padding-top: 50px;
+}
+.btn-next p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-next button {
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  background-color: #7f7bff;
+  border: none;
+  border-radius: 15px;
+  height: 48px;
+  width: 100%; /* Garante que o botão dentro do contêiner ocupe toda a largura */
+}

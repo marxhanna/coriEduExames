@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Cori Health</title>
+    <link rel="icon" href="/imgs/logo-alt.svg" />
+    <link href="/sda/style.css" rel="stylesheet" type="text/css" />
+    <script src="/semantic/semantic.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/semantic/semantic.min.css" />
+    <link rel="stylesheet" href="../header/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body onload="showQuadrantes()">
+    <div class="app-container">
+      <div class="top-bar">
+        <img id="menu" src="/imgs/menu.png" alt="Menu" />
+      </div>
+      <div id="sidebar" class="sidebar">
+        <div class="personal-info">
+          <img src="/imgs/foto2.jpg" alt="" />
+          <div class="text-info">
+            <p id="title">ESTUDANTE</p>
+            <p id="name">Marina Braga</p>
+          </div>
+        </div>
+        <div class="email">
+          <p>marina.braga@uni.edu.br</p>
+        </div>
+        <div class="redirects">
+          <div
+            class="hover"
+            onclick="location.href='https://edu.corihealth.com.br/index';"
+          >
+            <i class="fa fa-house"></i> Home
+          </div>
+          <div class="hover" onclick="location.href='/';">
+            <i class="fa fa-clipboard"></i>
+            Exames
+          </div>
+
+          <div
+            class="hover"
+            onclick="location.href='https://edu.corihealth.com.br/turmas';"
+          >
+            <i class="fa fa-user-graduate"></i> Turmas
+          </div>
+
+          <div
+            class="hover"
+            onclick="location.href='https://edu.corihealth.com.br/dashboard';"
+          >
+            <i class="fa-solid fa-chart-column"></i> Dashboard
+          </div>
+        </div>
+      </div>
+      <div id="overlay"></div>
+    </div>
+    <div class="adicional"></div>
+    <div class="adicional"></div>
+
+    <script src="../header/script.js"></script>
+
+    <div class="trauma-selecionado">
+      <img src="/imgs/icons/dor-abdominal.png" />
+      <br />
+      <span>Dor Abdominal</span>
+    </div>
+
+    <h2>Selecione o Quadrante da Dor</h2>
+    <div class="container">
+      <div class="ui two cards" id="qtds"></div>
+    </div>
+    <div class="btn-next" id="btn-next">
+      <button onclick="getSintomas()">
+        <p>Continuar</p>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

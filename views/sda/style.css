@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  background-color: #f2f2fe !important;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.card {
+  cursor: pointer;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s, font-weight 0.3s;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px; /* Defina uma altura adequada para seus cards */
+  width: 200px; /* Defina uma largura adequada para seus cards */
+}
+
+.card:hover {
+  background-color: #f0f0f0;
+}
+
+.card input[type="checkbox"] {
+  display: none; /* Oculta completamente a bolinha do checkbox */
+}
+
+.card label {
+  width: 100%; /* Faz o label ocupar toda a largura do card */
+  height: 100%; /* Faz o label ocupar toda a altura do card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.header {
+  background-image: url("/imgs/header-pages.png");
+  width: 100vw;
+  height: 10vh;
+  font-size: 16px;
+  color: white;
+}
+
+.user-info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5% 0 0 5%;
+}
+
+.user-pic {
+  height: 50px;
+  border: solid 2px #504dff;
+  border-radius: 50px;
+  margin-right: 3%;
+}
+
+.trauma-selecionado {
+  margin: 5%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trauma-selecionado img {
+  width: 60px;
+  height: 60px;
+}
+
+.trauma-selecionado span {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.container {
+  width: 90%;
+  margin: 10% 0 0 5%;
+}
+
+#input-green {
+  opacity: 0;
+  position: absolute;
+}
+
+#input-green + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+#input-green + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid rgb(187, 179, 179);
+  background: #fff;
+}
+
+#input-green:checked + label:before {
+  background: #9acb3f;
+  border-color: #9acb3f;
+}
+#input-green:checked + label:after {
+  display: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+.ui.two.cards > .card {
+  padding: 4% !important;
+  border-radius: 15px;
+}
+
+.ui.checkbox label {
+  overflow-wrap: break-word;
+}
+
+.btn-next {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo dentro do botão */
+  align-items: center;
+  background: none;
+  border-radius: 15px;
+  height: 48px;
+  width: 100%;
+  margin: 0 auto; /* Centraliza o botão horizontalmente */
+  padding-top: 50px;
+}
+.btn-next p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-next button {
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  background-color: #7f7bff;
+  border: none;
+  border-radius: 15px;
+  height: 48px;
+  width: 100%; /* Garante que o botão dentro do contêiner ocupe toda a largura */
+}

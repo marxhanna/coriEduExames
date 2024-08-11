@@ -1,0 +1,758 @@
+_type: export
+__export_format: 4
+__export_date: 2024-03-13T18:51:35.072Z
+__export_source: insomnia.desktop.app:v2023.5.8
+resources:
+  - _id: req_6c943fc4b45f491a94b994c9d9431258
+    parentId: fld_24534a1b6791439ebd91332c53c9369b
+    modified: 1710289482693
+    created: 1710121212164
+    url: "{{ _.baseUrl }}/api/2/cefaleia"
+    name: Mostrar Sinais
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1710121212164
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_24534a1b6791439ebd91332c53c9369b
+    parentId: wrk_6cfb1ae517a84579bf7b2cb7f1181955
+    modified: 1710121210171
+    created: 1710121210171
+    name: Cefalea
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1710121210171
+    _type: request_group
+  - _id: wrk_6cfb1ae517a84579bf7b2cb7f1181955
+    parentId: null
+    modified: 1707936398833
+    created: 1707936398833
+    name: Cori
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_79ee424dbd1246c2a6017f805acd05e6
+    parentId: fld_24534a1b6791439ebd91332c53c9369b
+    modified: 1710288289143
+    created: 1710122628786
+    url: "{{ _.baseUrl }}/api/2/cefaleia/diagnostico/"
+    name: Diagnostico
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"sinais": [
+        		"Mudança do padrão de dor", 
+        		"Piora progressiva da dor", 
+        		"Início súbito"
+        	]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1709029537622.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_80f5309efd084248841730a6de9a52a0
+    parentId: fld_24534a1b6791439ebd91332c53c9369b
+    modified: 1710127038886
+    created: 1710123467812
+    url: "{{ _.baseUrl }}/api/2/cefaleia/exame/"
+    name: Exame
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"diganosticos": [
+        		"HSA",
+        		"Aneurisma"
+        	]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1708483700351.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1fe59a4c6e984d0ca2b9e57afdf47d7c
+    parentId: fld_87fd8fda5c8e43f680a7661ad7475878
+    modified: 1710351159369
+    created: 1710349905473
+    url: "{{ _.baseUrl }}/api/2/casos/categorias"
+    name: Mostrar Categorias
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1710121212164
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_87fd8fda5c8e43f680a7661ad7475878
+    parentId: wrk_6cfb1ae517a84579bf7b2cb7f1181955
+    modified: 1710349905472
+    created: 1710349905472
+    name: Casos
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1709984750250.5625
+    _type: request_group
+  - _id: req_e750e8ab62ee4e83a6eb4b903b17f877
+    parentId: fld_87fd8fda5c8e43f680a7661ad7475878
+    modified: 1710355775485
+    created: 1710351153963
+    url: "{{ _.baseUrl }}/api/2/casos/detalhes/:caseId/:tipId"
+    name: Mostrar detalhes
+    description: |-
+      Params:
+      | Parametro| Função |
+      |---------|------------|
+      | :caseId | ID do caso |
+      | :tipId  | ID da dica |
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1710052982505.1562
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_83bdd68035f04c0d8ce5290ed6a8ab55
+    parentId: fld_87fd8fda5c8e43f680a7661ad7475878
+    modified: 1710355878606
+    created: 1710349905475
+    url: "{{ _.baseUrl }}/api/2/casos/respostas/:caseId"
+    name: Diagnostico
+    description: |-
+      Params:
+      | Parametro| Função |
+      |---------|------------|
+      | :caseId | ID do caso |
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1709029537622.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4a43d9ec464b46cabba4bb347b1f1f11
+    parentId: fld_87fd8fda5c8e43f680a7661ad7475878
+    modified: 1710349905476
+    created: 1710349905476
+    url: "{{ _.baseUrl }}/api/2/cefaleia/exame/"
+    name: Exame
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"diganosticos": [
+        		"HSA",
+        		"Aneurisma"
+        	]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1708483700351.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8e335a14c0ca41aa8b90c19935acc92c
+    parentId: fld_9cab1135c9974607a0ddb2540ea28416
+    modified: 1710293455087
+    created: 1710293441378
+    url: "{{ _.baseUrl }}/api/2/ivas"
+    name: Mostrar Sinais
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1710121212164
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_9cab1135c9974607a0ddb2540ea28416
+    parentId: wrk_6cfb1ae517a84579bf7b2cb7f1181955
+    modified: 1710293441376
+    created: 1710293441376
+    name: Ivas
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1709848290330.125
+    _type: request_group
+  - _id: req_624eb33b682e4b2189d459edaebf2d47
+    parentId: fld_9cab1135c9974607a0ddb2540ea28416
+    modified: 1710294025246
+    created: 1710293441382
+    url: "{{ _.baseUrl }}/api/2/ivas/diagnostico/"
+    name: Diagnostico
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"sinais": [
+        		"Coriza",
+        		"Exsudato amigdaliano"
+        	]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1709029537622.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ab48acd8b587480fa3e9c1d3907ab8cf
+    parentId: fld_9cab1135c9974607a0ddb2540ea28416
+    modified: 1710295363282
+    created: 1710293441384
+    url: "{{ _.baseUrl }}/api/2/ivas/exame/"
+    name: Exame
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"diganosticos": [
+        		"Viral",
+        		"Bacteriano"
+        	]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1708483700351.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d104b44d9491484e9531202603533072
+    parentId: fld_1918a97c9bb5439b8865e8c6eed4f6ab
+    modified: 1710285580037
+    created: 1710180023515
+    url: "{{ _.baseUrl }}/api/2/dores"
+    name: Mostrar Sinais
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1710121212164
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_1918a97c9bb5439b8865e8c6eed4f6ab
+    parentId: wrk_6cfb1ae517a84579bf7b2cb7f1181955
+    modified: 1710180023513
+    created: 1710180023513
+    name: Dores Abdominais
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1709575370489.25
+    _type: request_group
+  - _id: req_7d319aa7fdca4192a1a755a6ea456a97
+    parentId: fld_1918a97c9bb5439b8865e8c6eed4f6ab
+    modified: 1710286508210
+    created: 1710180050366
+    url: "{{ _.baseUrl }}/api/2/dores/quadrante/"
+    name: Mostrar Quadrantes
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1709984752846.3125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_572ff78eb49d414fa71cb82d7d6a1816
+    parentId: fld_1918a97c9bb5439b8865e8c6eed4f6ab
+    modified: 1710286535839
+    created: 1710286476031
+    url: "{{ _.baseUrl }}/api/2/dores/sintomas"
+    name: Mostrar Sintomas
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"quadrante": "Quadrante inferior direito"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1709848293528.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3bd451814f1948199538072d74b58c8b
+    parentId: fld_1918a97c9bb5439b8865e8c6eed4f6ab
+    modified: 1710289118241
+    created: 1710180023518
+    url: "{{ _.baseUrl }}/api/2/dores/diagnostico/"
+    name: Diagnostico
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"sinais": [
+        		"Náuseas",
+        		"Peritonite"
+        	]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1709029537622.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a33a8670a68d45e8993023b9507fe77e
+    parentId: fld_1918a97c9bb5439b8865e8c6eed4f6ab
+    modified: 1710289125031
+    created: 1710180023521
+    url: "{{ _.baseUrl }}/api/2/dores/exame/"
+    name: Exame
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"diganosticos": [
+        		"Colecistite aguda"
+        	]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1708483700351.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a05d9db0db1d44e09e8583fe75864e02
+    parentId: fld_60504217c051480aad3f03615fc3a04f
+    modified: 1710289477684
+    created: 1710128189758
+    url: "{{ _.baseUrl }}/api/2/lombalgia"
+    name: Mostrar Sinais
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1710121212164
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_60504217c051480aad3f03615fc3a04f
+    parentId: wrk_6cfb1ae517a84579bf7b2cb7f1181955
+    modified: 1710128189756
+    created: 1710128189756
+    name: Lombalgia
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1709029530807.5
+    _type: request_group
+  - _id: req_6f5ccf5350af4fce8560bf6c6dff4b0c
+    parentId: fld_60504217c051480aad3f03615fc3a04f
+    modified: 1710289465945
+    created: 1710128189759
+    url: "{{ _.baseUrl }}/api/2/lombalgia/diagnostico"
+    name: Diagnostico
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"sinais": [
+        		"Bacteremia", 
+        		"Hipertensão", 
+        		"Idade inferior a 20 anos"
+        	]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1709029537622.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f79adb72873c413688dab1f702d896b2
+    parentId: fld_60504217c051480aad3f03615fc3a04f
+    modified: 1710340691101
+    created: 1710128189761
+    url: "{{ _.baseUrl }}/api/2/lombalgia/exame/"
+    name: Exame
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"diganosticos": [
+        	"Metástase infecciosa",
+        	"Aneurisma de aorta"
+        ]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjo3LCJyb2xlIjoiRXN0dWRhbnRlIiwiaWF0IjoxNzEwMTI2OTA3fQ.K5BaxK12KlyCbf-g-XamHnZE2MSCE_eg19K2_DZp-vA
+    metaSortKey: -1708483700351.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_89bd49a24e7a4b638929a1ba7dedbe73
+    parentId: fld_ea20156a24924e8a87eea744cd1dc1ed
+    modified: 1707937867179
+    created: 1707936402075
+    url: "{{ _.baseUrl }}/api/2/users"
+    name: Create Medic
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"ocupation": "Médico",
+        	"name": "Joãozinho das Flores",
+        	"email": "jaozinho@gmail.com",
+        	"password": "bolabola",
+        	"birthdate": "2001-04-25",
+        	"phone": "+55 41 98797-6220",
+        	"crm": "42342342423423",
+        	"area": "Nsei",
+        	"work_institution": "PUCPR"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1707937863081
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_ea20156a24924e8a87eea744cd1dc1ed
+    parentId: wrk_6cfb1ae517a84579bf7b2cb7f1181955
+    modified: 1707937851444
+    created: 1707937851444
+    name: Users
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1707937851444
+    _type: request_group
+  - _id: req_2bb46bcc958c45fb80501bb1382201a3
+    parentId: fld_ea20156a24924e8a87eea744cd1dc1ed
+    modified: 1707939682801
+    created: 1707937838162
+    url: "{{ _.baseUrl }}/api/2/users"
+    name: Create Student
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"ocupation": "Estudante",
+        	"name": "Joãozinho das Flores",
+        	"email": "jaozinhsdasdaso@gmail.com",
+        	"password": "bolabola",
+        	"birthdate": "2001-04-25",
+        	"phone": "+55 41 98797-6220",
+        	"institution": "PUCPR", 
+          "start_year": "2020",
+        	"work_institution": "PUCPR"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1707937862981
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0665ecfd75274987a6a531415ae7ee43
+    parentId: fld_ea20156a24924e8a87eea744cd1dc1ed
+    modified: 1707939752443
+    created: 1707939736874
+    url: "{{ _.baseUrl }}/api/2/users/login"
+    name: Login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "jaozinhsdasdaso@gmail.com",
+        	"password": "bolabola"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1707032512811.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_783060800ffa6d8305299af9c94d694060a5635d
+    parentId: wrk_6cfb1ae517a84579bf7b2cb7f1181955
+    modified: 1707936420597
+    created: 1707936398838
+    name: Base Environment
+    data:
+      baseUrl: localhost:3000
+    dataPropertyOrder:
+      "&":
+        - baseUrl
+    color: null
+    isPrivate: false
+    metaSortKey: 1707936398838
+    _type: environment
+  - _id: jar_783060800ffa6d8305299af9c94d694060a5635d
+    parentId: wrk_6cfb1ae517a84579bf7b2cb7f1181955
+    modified: 1707936398839
+    created: 1707936398839
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar

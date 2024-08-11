@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  background-image: url("/imgs/bg-exame.png") !important;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f2f2fe;
+  height: 100%;
+  width: 100%;
+}
+
+.corpo-exames {
+  background-color: #f2f2fe;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  overflow-y: auto;
+}
+
+.segmento-exame {
+  display: flex;
+  padding-left: 5%;
+  background-color: white;
+  height: 70px;
+  border-radius: 45px;
+  margin-bottom: 10%;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.conteudo-exame {
+  border-radius: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.conteudo-exame img {
+  border-radius: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.conteudo-exame span {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.imagem-exame {
+  border-radius: 15px;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin-right: 5%;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 100%;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.trauma-selecionado {
+  margin: 5%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trauma-selecionado img {
+  width: 60px;
+  height: 60px;
+}
+
+.trauma-selecionado span {
+  font-size: 15px;
+  font-weight: 700;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Cori Health</title>
+    <link rel="icon" href="/imgs/logo-alt.svg" />
+    <link href="/hipotese/style.css" rel="stylesheet" type="text/css" />
+    <script src="/semantic/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/semantic/semantic.min.css" />
+  </head>
+
+  <body onload="showDiagnosticos()">
+    <div class="header">
+      <div class="user-info">
+        <img class="user-pic" src="/imgs/user.jpeg" />
+        <span>Olá, Usuário!</span>
+      </div>
+    </div>
+
+    <div class="ui mini breadcrumb">
+      <a class="section">Home</a>
+      <i class="right chevron icon divider"></i>
+      <div class="section">Sintoma</div>
+      <i class="right chevron icon divider"></i>
+      <a class="active section">Etiologia</a>
+      <i class="right chevron icon divider"></i>
+      <a class="section">Tratamento</a>
+    </div>
+
+    <div class="trauma-selecionado">
+      <img src="/imgs/icons/ivas.png" />
+      <br />
+      <span>Infecções de vias aéreas superiores</span>
+    </div>
+
+    <h2>Selecione a Etiologia</h2>
+    <div class="container">
+      <div class="ui two cards" id="hds">
+        <div class="card">
+          <div class="ui checkbox"></div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-next" id="btn-next">
+      <button onclick="getExames()">
+        <img src="/imgs/icons/arrow.png" />
+      </button>
+    </div>
+    <br /><br /><br /><br />
+    <div class="navbar">
+      <div class="navbar-icons">
+        <a id="home">
+          <img src="/imgs/icons/home.png" />
+        </a>
+        <a id="cases">
+          <img src="/imgs/icons/inactive_navbar_cases.png"
+        /></a>
+        <a id="ivas"><img src="/imgs/icons/inactive_navbar_ivas.png"
+        /></a>
+        <a id="settings">
+          <img src="/imgs/icons/inactive-gear.png" />
+        </a>
+      </div>
+    </div>
+    <script src="/navbar.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

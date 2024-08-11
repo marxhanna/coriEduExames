@@ -1,0 +1,39 @@
+{
+  "name": "Cori Health",
+  "short_name": "Cori",
+  "start_url": "https://app.corihealth.com.br/",
+  "scope": "https://app.corihealth.com.br/",
+  "prefer_related_applications": false,
+  "theme_color": "#504DFF",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "screenshots": [
+    {
+     "src": "./screenshot1.png",
+      "sizes": "401x877",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Wonder Widgets"
+    },
+    {
+      "src": "./screenshot2.png",
+       "sizes": "401x877",
+       "type": "image/png",
+       "form_factor": "narrow",
+       "label": "Wonder Widgets"
+     }
+  ],
+  "icons":[
+    {
+      "src":"imgs/logo-alt.svg",
+      "sizes": "520x600",
+      "type": "image/png"
+    },
+    {
+      "src":"imgs/logo-alt-square.png",
+      "sizes": "160x160",
+      "type": "image/png"
+    }
+  ]
+
+}
