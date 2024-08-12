@@ -21,7 +21,7 @@ app.use(cors());
 app.use("/api/2", routes);
 
 app.get("/", (req, res) => {
-  res.render("paginainicial"); // Não é necessário incluir a extensão .ejs
+  res.render("paginaInicial"); // Não é necessário incluir a extensão .ejs
 });
 const cefaleiaConfig = {
   host: "corihealth.com.br",
@@ -249,10 +249,6 @@ app.post("/api/receber_descricao", async (req, res) => {
     console.error(error);
     return res.status(500).json({ error: "Internal Server Error" });
   }
-});
-
-app.get("/exames", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "paginaInicial.html"));
 });
 
 //******************************************************************************************************* */
