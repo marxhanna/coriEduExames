@@ -5,7 +5,7 @@ import UsersAuthMiddleware from "./middlewares/users";
 import LombalgiaController from "./controller/lombalgiaController";
 import DoresAbdominaisController from "./controller/doresAbdominaisController";
 import IvasController from "./controller/ivasController";
-import usersController from "./controller/usersController";
+import UsersController from "./controller/usersController";
 
 const routes = Router();
 
